@@ -19,7 +19,13 @@ html {
     height: 100%;
 }
 
+.transText {
+    color: rgba(0,0,0,.5);
+}
 
+.spacer {
+    height: 100px;
+}
 /* Homepage Settings  */
 
 .leftTitle p {  
@@ -28,11 +34,71 @@ html {
     padding-top: 2%;
 }
 
+.rightTitle {
+    margin-top: 25px;
+    position: absolute; 
+    right: 0;
+    text-align: right;
+}
+ 
+.menubutton {
+    padding-right: 15px;
+    width: 60px;
+    margin-left: 15px;
+
+}
+
+/* menu classes */
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+/* end menu classes */
+  
+
 .headerBackground {
     box-shadow: 1px 5px rgba(32, 32, 32, 0);
     border-bottom: 3px solid rgba(0,0,0,.2);
-    position: static;
-
+    position: fixed;
+    width: 101%;
+    background-color: white;
+    z-index: 100;
 }
 
 .mainTitle {
@@ -75,6 +141,14 @@ html {
 .introButton {
     margin-left: 25%;
     margin-right: 25%;
+}
+
+.introButton > h3 > a {
+    color: white !important;
+}
+
+.introButton > h3 > a:hover {
+    color: rgb(82,137,200) !important;
 }
 
 .introText h2 {
@@ -171,10 +245,187 @@ html {
     text-align: center;
 }
 
+.footerContainerAlt {
+    height: 100px;
+    text-align: center;
+    background-color: rgb(241, 252, 255);
+}
 .contactIcons {
     margin-top: 20px;
 }
 
 .contactIcons img {
     width: 32px;
+}
+
+/* services page */
+
+.servBackground {
+    background: url(../img/servHeader.jpg) no-repeat center center;
+    background-size: cover;
+    height: 33.5em;
+}
+
+.servIntroBack {
+    background-color: rgb(241, 252, 255) !important;
+}
+.servMessage {
+    height: 150px;
+    text-align: center;
+}
+
+.servMessage > h1 {
+    font-size: 3.5em;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+}
+
+.servOuterBox {
+    height: 300px;
+}
+
+.servDescription {
+    text-align: center;
+}
+
+.servDescription > h2 {
+    border-bottom: 2px dashed black;
+    position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.servDescription > p {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 1.2em;
+}
+
+.descLink {
+   text-decoration: none !important; 
+}
+.buttonController {
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 25px;
+    background-color: rgb(82,137,200);
+    box-shadow: 2px 2px rgba(0,0,0,.3);
+    font-size: 1.5em;
+    color:white;
+}
+.servImage1 {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/services/serv_1.jpg');
+    height: 100%;
+}
+
+.servImage2 {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/services/serv_2.jpg');
+    height: 100%;
+}
+
+.servImage3 {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/services/serv_3.jpg');
+    height: 100%;
+}
+
+/* insurance page */
+
+.insBackground {
+    background: url(../img/insurance/insHeader.jpg) no-repeat center center;
+    background-size: cover;
+    height: 33.5em;
+}
+
+.insIntroBack {
+    background-color: rgb(241, 252, 255) !important;
+}
+
+.insMessage {
+    height: 150px;
+    text-align: center;
+}
+
+.insMessage > h1 {
+    font-size: 3.5em;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+}
+
+.insIntro {
+    text-align: center;
+}
+
+.insIntro > div > p {
+    font-size: 1.5em;
+}
+
+.insBox1 {
+    background-color:white;
+    text-align: center;
+    height: 250px;
+}
+
+.insBox2 {
+    background-color: rgb(241, 252, 255);
+    text-align: center;
+    height: 250px;
+}
+
+/* frames page */
+
+.framesBackground {
+    background: url(../img/frames/framesIntro.jpg) no-repeat center center;
+    background-size: cover;
+    height: 33.5em;
+}
+
+.framesIntroBack {
+    background-color: rgb(241, 252, 255) !important;
+}
+
+.framesMessage {
+    height: 150px;
+    text-align: center;
+}
+
+.framesMessage > h1 {
+    font-size: 3.5em;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+}
+
+/* contact page */
+
+.contBackground {
+    background: url(../img/contact/contIntro.jpg) no-repeat center center;
+    background-size: cover;
+    height: 33.5em;
+}
+
+.contBox {
+    margin-top: 25px;
+    border: 2px solid rgba(0,0,0,.2);
+    text-align: center;
+    height: 300px;
+    box-shadow: 5px 5px rgba(0,0,0,.2);
+
+}
+
+.nameBox {
+    border: 2px solid rgba(0,0,0,.2);
+}
+
+.nameBox > p {
+    padding-top: 10px;
+    font-size: 1.5em;
 }
