@@ -31,16 +31,35 @@ html {
 .leftTitle p {  
     font-size: .95em;
     padding-left: 2%;
-    padding-top: 2%;
+    padding-top: 1%;
 }
 
-.rightTitle {
+.rightSpacer {
     margin-top: 25px;
     position: absolute; 
     right: 0;
     text-align: right;
 }
  
+.headerButtons {
+    margin-top: 20px;
+    position: absolute; 
+    text-align: center;
+}
+
+.headerButtons > h3 {
+    font-size: 1.5em;
+}
+
+.headerButtons > h3 > a {
+    text-decoration: none !important;
+    color: black;
+}
+
+.headerButtons > h3 > a:hover {
+    color: rgb(82,137,200);
+}
+
 .menubutton {
     padding-right: 15px;
     width: 60px;
@@ -156,10 +175,11 @@ html {
 }
 
 .introLinks {
-    position: absolute;
+    
     top: 25%;
     height: 17em;
     text-align: center;
+    
 }
 
 .linkText {
@@ -416,9 +436,14 @@ html {
     margin-top: 25px;
     border: 2px solid rgba(0,0,0,.2);
     text-align: center;
-    height: 300px;
+    height: 775px;
     box-shadow: 5px 5px rgba(0,0,0,.2);
 
+}
+
+.contBox > script {
+    margin-top: 5px;
+    border: 2px solid red;
 }
 
 .nameBox {
@@ -429,3 +454,7 @@ html {
     padding-top: 10px;
     font-size: 1.5em;
 }
+
+
+
+@media only screen and (max-width: )
